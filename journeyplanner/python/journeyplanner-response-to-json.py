@@ -56,4 +56,4 @@ journeyplannerResponse = sendGraphqlQuery(query, {})
 file.write(journeyplannerResponse)
 file.close()
 
-print("Everything went OK. Reponse has been written to " + filename)
+print("Everything went OK. Response has been written to " + filename)
