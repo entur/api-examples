@@ -12,6 +12,7 @@
 # limitations under the Licence.
 
 import json
+import socket
 import os
 from six.moves import urllib
 
@@ -20,9 +21,9 @@ from six.moves import urllib
 
 HEADERS = {'Accept': 'application/json',
             'Content-Type': 'application/json',
-            'User-Agent': 'my-python-test-example-change-this',
-            'ET-Client-Name': 'my-python-test',
-            'ET-Client-ID': os.environ.get('HOSTNAME','')}
+            'User-Agent': 'python-code-example-' + socket.gethostname(),
+            'ET-Client-Name': 'python-code-example-' + socket.gethostname(),
+            'ET-Client-ID': socket.gethostname()}
 
 GRAPHQL_ENDPOINT = "https://api.entur.org/journeyplanner/2.0/index/graphql"
 CONNECT_TIMEOUT_SECONDS = 15
