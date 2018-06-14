@@ -1,2 +1,5 @@
 # api-examples
-Examples for calling APIs
+Example code for calling Entur's APIs
+
+See also https://github.com/entur/sdk
+
